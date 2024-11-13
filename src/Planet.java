@@ -13,11 +13,13 @@ public class Planet extends Astre implements IOrbitable{
 
     public void add(Satellite s)
     {
+
         listeSatellite.add(s);
     }
 
     @Override
     public void orbiterAutour(Astre astre) {
+
         Soleil.listePlanettes.add(this);
     }
 

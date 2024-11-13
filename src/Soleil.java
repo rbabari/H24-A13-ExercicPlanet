@@ -16,12 +16,15 @@ public class Soleil extends Astre {
     public static ArrayList<Planet> listePlanettes;
 
     private Soleil() {
+        this.nom = "Soleil";
         listePlanettes = new ArrayList<Planet>();
     }
 
-    public static Astre getInstance() {
+    public static Soleil getInstance() {
         if (instance == null)
-        {new Soleil();}
+        {
+            instance = new Soleil();
+        }
         return instance;
     }
     public void add(Planet planet){
